@@ -1,8 +1,8 @@
 import * as tf from '@tensorflow/tfjs-core';
 
-import { createCanvasFromMedia, euclideanDistance, NetInput, toNetInput } from '../../../src';
+import { createCanvasFromMedia, euclideanDistance, NetInput, toNetInput } from '../src/index';
 import { getTestEnv } from '../../env';
-import { describeWithBackend, describeWithNets, expectAllTensorsReleased } from '../../utils';
+import { describeWithBackend, describeWithNets, expectAllTensorsReleased } from '../utils';
 
 describeWithBackend('faceRecognitionNet', () => {
 
